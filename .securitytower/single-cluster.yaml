@@ -1,0 +1,17 @@
+apiVersion: securitytower.io/v1alpha1
+kind: Cluster
+metadata:
+  name: pintc01003h040401050l001
+spec:
+  tenant: templates
+  contact:
+    email: josh.vermast@finastra.com
+  configuration:
+    description: Non-productive cluster as blueprint from a template cluster repository.
+    geographicLocation: Azure - EastUS
+    production: false
+    securityLevel: internal
+  policies:
+    path: cluster/global/policies
+  namespaces:
+    - path: cluster/global/namespace-specs
