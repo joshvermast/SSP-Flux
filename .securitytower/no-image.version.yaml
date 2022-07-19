@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: no-image-version-deployment
+  labels:
+    app: no-image-version
+spec:
+  selector:
+    matchLabels:
+      app: no-image-version
+  template:
+    metadata:
+      labels:
+        app: no-image-version
+    spec:
+      containers:
+        - name: nginx
+          # No version specified, which means it would pull the `latest` tag from the registry.
+          image: nginx
+          ports:
+            - containerPort: 80
