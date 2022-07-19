@@ -9,5 +9,5 @@ spec:
             repository: https://github.com/joshvermast/pintc01003h040401050l001.git
             name: pintc01003h040401050l001
           resources:
-            path: cluster/namespaces/demo-app
+            path: cluster/namespaces/test-app
           targetNamespace: test-app
