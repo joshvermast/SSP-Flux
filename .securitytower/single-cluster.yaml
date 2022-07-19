@@ -8,7 +8,7 @@ spec:
     email: josh.vermast@finastra.com
   configuration:
     description: SSP Internal/Dev Cluster
-    geographicLocation: Azure - EastUS
+    geographicLocation: Azure - East US
     production: false
     securityLevel: internal
   policies:
