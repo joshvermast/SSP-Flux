@@ -3,15 +3,15 @@ kind: Cluster
 metadata:
   name: pintc01003h040401050l001
 spec:
-  tenant: templates
+  tenant: SSP
   contact:
     email: josh.vermast@finastra.com
   configuration:
-    description: Non-productive cluster as blueprint from a template cluster repository.
+    description: SSP Internal/Dev Cluster
     geographicLocation: Azure - EastUS
     production: false
     securityLevel: internal
   policies:
-    path: cluster/global/policies
+    path: cluster/policies
   namespaces:
-    - path: cluster/global/namespace-specs
+    - path: cluster/namespace-specs
