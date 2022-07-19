@@ -14,4 +14,4 @@ spec:
   policies:
     path: cluster/policies
   namespaces:
-    - path: cluster/namespace-specs
+    - path: cluster/namespaces
